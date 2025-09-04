@@ -56,10 +56,64 @@ const Index = () => {
       profile: "प्रोफाइल",
       currentLocation: "वर्तमान स्थान",
       emergencyAlert: "आपातकालीन सेवाएं 24/7 उपलब्ध"
+    },
+    ta: {
+      appTitle: "வெள்ளம் மேலாண்மை அமைப்பு",
+      report: "அறிக்கை",
+      alerts: "எச்சரிக்கைகள்",
+      emergency: "அவசரநிலை",
+      profile: "சுயவிவரம்",
+      currentLocation: "தற்போதைய இடம்",
+      emergencyAlert: "அவசர சேவைகள் 24/7 கிடைக்கும்"
+    },
+    te: {
+      appTitle: "వరద నిర్వహణ వ్యవస్థ",
+      report: "నివేదిక",
+      alerts: "హెచ్చరికలు",
+      emergency: "అత్యవసరం",
+      profile: "ప్రొఫైల్",
+      currentLocation: "ప్రస్తుత స్థానం",
+      emergencyAlert: "అత్యవసర సేవలు 24/7 అందుబాటులో"
+    },
+    bn: {
+      appTitle: "বন্যা ব্যবস্থাপনা সিস্টেম",
+      report: "রিপোর্ট",
+      alerts: "সতর্কতা",
+      emergency: "জরুরি",
+      profile: "প্রোফাইল",
+      currentLocation: "বর্তমান অবস্থান",
+      emergencyAlert: "জরুরি সেবা ২৪/৭ পাওয়া যায়"
+    },
+    mr: {
+      appTitle: "पूर व्यवस्थापन प्रणाली",
+      report: "अहवाल",
+      alerts: "इशारे",
+      emergency: "आपत्कालीन",
+      profile: "प्रोफाइल",
+      currentLocation: "सध्याचे स्थान",
+      emergencyAlert: "आपत्कालीन सेवा २४/७ उपलब्ध"
+    },
+    gu: {
+      appTitle: "પૂર વ્યવસ્થાપન સિસ્ટમ",
+      report: "રિપોર્ટ",
+      alerts: "ચેતવણીઓ",
+      emergency: "કટોકટી",
+      profile: "પ્રોફાઇલ",
+      currentLocation: "વર્તમાન સ્થાન",
+      emergencyAlert: "કટોકટીની સેવાઓ ૨૪/૭ ઉપલબ્ધ"
+    },
+    kn: {
+      appTitle: "ಪ್ರವಾಹ ನಿರ್ವಹಣಾ ವ್ಯವಸ್ಥೆ",
+      report: "ವರದಿ",
+      alerts: "ಎಚ್ಚರಿಕೆಗಳು",
+      emergency: "ತುರ್ತುಸ್ಥಿತಿ",
+      profile: "ಪ್ರೊಫೈಲ್",
+      currentLocation: "ಪ್ರಸ್ತುತ ಸ್ಥಳ",
+      emergencyAlert: "ತುರ್ತು ಸೇವೆಗಳು ೨೪/೭ ಲಭ್ಯ"
     }
   };
 
-  const t = translations[selectedLanguage as keyof typeof translations];
+  const t = translations[selectedLanguage as keyof typeof translations] || translations.en;
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-green-50">
